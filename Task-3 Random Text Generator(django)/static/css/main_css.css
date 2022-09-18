@@ -1,0 +1,10 @@
+thead{
+	text-align:center;
+}
+th{
+	text-align:center;
+	justify-content:center;
+}
+table, th, td {
+  border: 0px solid;
+}
