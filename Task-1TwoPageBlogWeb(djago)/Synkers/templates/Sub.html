@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Synkers | Blog Site</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/Sub_Css.css' %}">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@300&family=Lobster&family=Montserrat:wght@100;200&family=Noto+Sans:wght@100&family=Open+Sans:wght@300&family=Poppins:wght@800&display=swap" rel="stylesheet">
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+	<link rel="shortcut icon" href="{% static 'images/Logo.png' %}">
+</head>
+<body>
+	<header>
+		<ul>
+			<li class="Lio"><img src="{% static 'images/SynKers.png' %}" width="100%" height="100%" style="border-radius:0.2em;"></li>
+			<li class="Lio"><p style="margin-left:0.2em;">Share POV'S !!</p></li>
+			<li class="Lil"><a href="{% url 'Home' %}" class="passive"><i class="fi fi-bs-home"></i><p>Home</p></a></li>
+			<li class="Lil"><a href="{% url 'Post' %}" class="active"><i class="fi fi-ss-paper-plane"></i><p>Post</p></a></li>
+		</ul>
+	</header>
+	{% if messages %}
+{% for message in messages %}
+    <div class="alert {{ message.tags }} m-2" id="msg" role="alert" style="color:#1a374d;font-family: 'Montserrat', sans-serif;font-size:2em;text-align:center;margin-top:1em;">
+        {{ message }}<i class="fi fi-br-check"></i>
+    </div>
+{% endfor %}
+{% endif %}
+	<div class="row">
+		<div class="col1">
+			<form method="POST">{% csrf_token %}
+				<input type="text" name="Name" placeholder="Name" autocomplete="no" required width="30">
+				<input type="email" name="Email" placeholder="E-Mail" autocomplete="no" required width="30">
+				<input type="text" name="Subject" placeholder="Subject" autocomplete="no" required width="30">
+				<textarea name="Body" placeholder="Body" cols="50" rows="5" required autocomplete="no"></textarea>
+				<input type="submit" name="" value="POST" class="sub">
+			</form>
+		</div>
+		<div class="col2">
+			<div><h2 style="margin:0;">What is a blog?</h2></div>
+			<div><h3 style="margin:0.2em 0">It is an online journal where an individual, group, or corporation presents a record of activities, thoughts, or beliefs.</h3></div>
+			<div><h2 style="margin:0;">Be sure:</h2></div>
+			<div>
+				<ul class="cntul">
+					<li>
+						<h3>You produce original content.</h3>
+					</li>
+					<li>
+						<h3>Ensure you stay human.</h3>
+					</li>
+					<li>
+						<h3>Social media and blogging are not the same.</h3>
+					</li>
+					<li>
+						<h3>You are't focus on the wrong things.</h3>
+					</li>
+				</ul>
+				</div>
+		</div>
+	</div>
+</body>
+</html>

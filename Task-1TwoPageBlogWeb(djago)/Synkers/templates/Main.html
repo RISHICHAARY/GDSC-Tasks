@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Synkers | Blog Site</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/Main_Css.css' %}">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@300&family=Lobster&family=Montserrat:wght@100;200&family=Noto+Sans:wght@100&family=Open+Sans:wght@300&family=Poppins:wght@800&display=swap" rel="stylesheet">
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+	<link rel="shortcut icon" href="{% static 'images/Logo.png' %}">
+</head>
+<body>
+	<header>
+		<ul>
+			<li class="Lio"><img src="{% static 'images/SynKers.png' %}" width="100%" height="100%" style="border-radius:0.2em;"></li>
+			<li class="Lio"><p style="margin-left:0.2em;">Share POV'S !!</p></li>
+			<li class="Lil"><a href="{% url 'Home' %}" class="active"><i class="fi fi-bs-home"></i><p>Home</p></a></li>
+			<li class="Lil"><a href="{% url 'Post' %}" class="passive"><i class="fi fi-ss-paper-plane"></i><p>Post</p></a></li>
+		</ul>
+	</header>
+	<div class="row">
+		<div class="col1">
+			{% for i in dict %}
+			<div class="blog">
+				<ul class="blogul">
+					<li class="blogli" style="font-size:1.5em;margin:0;padding:0;">{{i.Name}}</li>
+					<li class="blogli" style="font-size:0.7em;margin:0;padding:0;margin-top:0.1em">{{i.Email}}</li><hr>
+					<li class="blogli" style="font-size:1.5em;margin:0;padding:0;margin-top:0.1em;background:white;border-radius:0.1em">{{i.Subject}}</li>
+					<li class="blogli" style="font-size:1.5em;margin:0;padding:1em;padding-top:0.5em; background:white;border-radius:0.1em">{{i.Body}}</li>
+					<liclass="blogli" style="font-size:0.7em;margin:0;padding:0;margin-top:0.1em">{{i.Date}}</li>
+				</ul>
+		</div>
+			{% endfor %}
+		</div>
+		<div class="col2">
+			<h3>Disclaimer:</h3>
+			<h4>This web-site only for sharing your POV'S. For any kind of Disputes, We are not Responsible.</h4>
+		</div>
+	</div>
+</body>
+</html>

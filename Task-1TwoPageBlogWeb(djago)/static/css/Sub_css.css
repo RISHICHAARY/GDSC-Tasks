@@ -1,0 +1,125 @@
+body{
+	margin:0;
+	padding:0;
+	background-color:#FBF2CF;
+}
+.Lil{
+	display:inline-block;
+	font-family: 'Noto Sans', sans-serif;
+	font-size:2em;
+	margin-right:0.5em;
+	color:#A1C298;
+}
+.Lio{
+	color:#A1C298;
+	font-family: 'Noto Sans', sans-serif;
+	display:inline;
+	float:left;
+	font-size:2em;
+}
+ul:not(.cntul){
+	margin:0.5em;
+	padding:0.5em;
+	list-style:none;
+	text-align:right;
+	background-color:rgba(198,235,197,0.7);
+	border-radius:0.5em;
+}
+a{
+	color:#A1C298;
+	text-decoration:none;
+}
+i{
+	display:inline;
+	margin-right:0.2em;
+}
+p{
+	display:inline-block;
+}
+.active{
+	text-decoration:underline solid 0.1em;
+	text-underline-position:under;
+}
+.passive:hover{
+	text-decoration:underline solid 0.1em;
+	text-underline-position:under;
+}
+.row{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin:0.9em;
+  padding:0;
+  justify-content:center;
+}
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 48%;
+    flex: 48%;
+    max-width: 48%;
+    max-height:auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.col2{
+  -ms-flex: 37%; /* IE10 */
+  flex: 37%;
+  max-width: 37%;
+  max-height:auto;
+  padding:0.5em;
+  margin:0;
+  float:right;
+  font-family: 'Noto Sans', sans-serif;
+  font-size:1.5em;
+  color:#FBF2CF;
+  background-color:rgba(250, 112, 112,0.7);
+  border-radius:0.5em;
+}
+.col1{
+  -ms-flex: 60%; /* IE10 */
+  flex: 60%;
+  max-width: 60%;
+  max-height:auto;
+  padding:0;
+  margin:0;
+  float:left;
+}
+input{
+	font-family: 'Noto Sans', sans-serif;
+	font-size:2em;
+	background:transparent;
+	border:none;
+	outline:none;
+	border-bottom:0.1em solid #A1C298;
+	display:block;
+	margin:0.5em;
+	border-radius:0.1em;
+}
+textarea{
+	font-family: 'Noto Sans', sans-serif;
+	font-size:2em;
+	background:transparent;
+	outline:none;
+	border:0.1em solid;
+	border-color:#A1C298;
+	margin:0.5em;
+	margin-bottom:0;
+	border-radius:0.1em;
+}
+.sub{
+	display:inline;
+	border:none;
+	background-color:#A1C298;
+	border-radius:0.2em;
+	color:#FBF2CF;
+}
+.cntul{
+	text-align:left;
+}
