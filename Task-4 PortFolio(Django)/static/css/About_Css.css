@@ -1,0 +1,130 @@
+.LgD{
+	margin:10em 0 0 0em;
+	padding:0;
+	display:inline;
+	float:left;
+}
+.TxD{
+	margin:10em 0 0 0.9em;
+	padding:0;
+	display:inline;
+	float:right;
+}
+.row{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding:0;
+  color:#1a374d;
+}
+.rw{
+  padding:0;
+  text-align:center;
+  justify-content:center;
+  color:#1a374d;
+  font-family: 'Montserrat', sans-serif;
+  font-size:1.5em;
+  margin-top:3em;
+}
+.row2{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding:0;
+  margin-top:5em;
+  justify-content:right;
+  align-content:right;
+}
+.row1{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 0px;
+  margin:0;
+  margin-left:1em;
+  justify-content:center;
+}
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 48%;
+    flex: 48%;
+    max-width: 48%;
+    max-height:auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.col{
+  -ms-flex: 22%; /* IE10 */
+  flex: 25%;
+  max-width: 22%;
+  max-height:auto;
+  padding:0em;
+}
+.col1{
+  -ms-flex: 72%; /* IE10 */
+  flex: 75%;
+  max-width: 72%;
+  max-height:auto;
+  padding:0em;
+}
+.col2{
+  -ms-flex: 10%; /* IE10 */
+  flex: 10%;
+  max-width: 10%;
+  max-height:auto;
+  padding:0em;
+  margin:0;
+  margin-top:5em;
+}
+.colr2{
+  -ms-flex: 48%; /* IE10 */
+  flex: 48%;
+  max-width: 48%;
+  max-height:auto;
+  padding:0em;
+  display:table;
+}
+.colr1{
+  -ms-flex: 40%; /* IE10 */
+  flex: 40%;
+  max-width: 40%;
+  max-height:auto;
+  padding:0em;
+  text-align:center;
+  color:#1a374d;
+  font-family: 'Montserrat', sans-serif;
+  font-size:2em;
+}
+label{
+  margin: 0.2em 0em 0.7em 0em;
+  color:#1a374d;
+  font-family: 'Montserrat', sans-serif;
+  font-size:2em;
+  display:table-cell;
+  text-align:left;
+  width:50%;
+}
+::-webkit-progress-bar{
+  border-radius:0.1em;
+}
+::-webkit-progress-value{
+  background-color:#1a374d;
+  border-radius:0.1em;
+}
+progress{
+  -webkit-appearance: none;
+  float:right;
+  display:table-cell;
+}
+.tr{
+  display:table-row;
+}

@@ -1,0 +1,32 @@
+{% extends 'Nav.html' %}
+{% load static %}
+{% block meta_description1 %}passive{% endblock %}
+{% block meta_description2 %}passive{% endblock %}
+{% block meta_description3 %}passive{% endblock %}
+{% block meta_description4 %}active{% endblock %}
+{% block content %}
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+<link rel="stylesheet" type="text/css" href="{% static 'css/Contact_Css.css' %}">
+<div class="row">
+	<div class="col">
+		<div style="text-align:center;"><h1>Quick Message<i class="fi fi-rs-paper-plane"></i></h1></div>
+		<form method="POST">{% csrf_token %}
+			<input type="email" name="mail" placeholder="Your E-mail" width="30" required autocomplete="no">
+			<input type="text" name="subject" placeholder="Subject" width="30" required autocomplete="no">
+			<textarea name="Message" placeholder="Message" cols="30" rows="3" required autocomplete="no"></textarea>
+			<input type="submit" class="sub" value="SEND">
+		</form>
+	</div>
+	<div class="col1" style="text-align:left;">
+		<div style="text-align:center;"><h1><i class="fi fi-rs-search"></i>Find Me On:</h1></div>
+		<div class="ab"><i class="fi fi-sr-envelope"></i><h4>rishichaary1903@gmail.com</h4></div><br>
+		<a href="https://www.linkedin.com/in/rishi-chaary-a59483221" class="ab" target="blank"><i class="fi fi-brands-linkedin"></i><h4>Rishi Chaary</h4></a><br>
+		<a href="https://www.instagram.com/mr_fa._.ke?r=nametag" class="ab" target="blank"><i class="fi fi-brands-instagram"></i><h4>mr_fa._.ke</h4></a><br>
+		<a href="https://twitter.com/ChaaryRishi?t=M_WRT6UN2E8i7Wx_Zq5N5w&s=03" class="ab" target="blank"><i class="fi fi-brands-twitter"></i><h4>Rishi Chaary</h4></a><br>
+		<a href="https://github.com/RISHICHAARY" class="ab" target="blank"><i class="fi fi-brands-github"></i><h4>Rishi Chaary</h4></a><br>
+	</div>
+</div>
+{% endblock %}

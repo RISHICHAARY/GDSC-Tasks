@@ -1,0 +1,44 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rishi Chaary | Fullstack Developer</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/Nav_Css.css' %}">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@300&family=Lobster&family=Montserrat:wght@100;200&family=Open+Sans:wght@300&family=Poppins:wght@800&display=swap" rel="stylesheet">
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+	<link rel="shortcut icon" href="{% static 'images/Rc..png' %}">
+</head>
+<body>
+	<header>
+		<ul class="Nav_Ul">
+			<li class="Nav_Lg">
+				<div><p class="Nav_LgP">Rc.</p></div>
+			</li>
+			<li>
+				<li class="Nav_Li">
+					<a href="{% url 'Home' %}" class="{% block meta_description1 %}{% endblock %}"><p class="Nav_LiP">HOME</p></a>
+				</li>
+				<li class="Nav_Li">
+					<a href="{% url 'About' %}" class="{% block meta_description2 %}{% endblock %}"><p class="Nav_LiP">ABOUT</p></a>
+				</li>
+				<li class="Nav_Li">
+					<a href="{% url 'Work' %}" class="{% block meta_description3 %}{% endblock %}"><p class="Nav_LiP">WORKS</p></a>
+				</li>
+				<li class="Nav_Li">
+					<a href="{% url 'Contact' %}" class="{% block meta_description4 %}{% endblock %}"><p class="Nav_LiP">CONTACT</p></a>
+				</li>
+			</li>
+		</ul>
+	</header>
+{% if messages %}
+{% for message in messages %}
+    <div class="alert {{ message.tags }} m-2" id="msg" role="alert" style="color:#1a374d;font-family: 'Montserrat', sans-serif;font-size:2em;text-align:center;margin-top:1em;">
+        {{ message }}<i class="fi fi-br-check"></i>
+    </div>
+{% endfor %}
+{% endif %}
+	{% block content %}
+
+	{% endblock %}

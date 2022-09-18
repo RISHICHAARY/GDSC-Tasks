@@ -1,0 +1,97 @@
+{% load static %}
+body{
+	margin:0;
+	padding:0;
+	/*background-color:#6998ab;*/
+	/*animation:bgchg 300s ease-in-out infinite;*/
+	background: #8e9eab;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+@keyframes bgchg{
+	0%{
+		background-image:url('/static/images/Bg-1.png');
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:center;
+		background-color:rgba(105, 152, 171,1);
+		background-blend-mode:soft-light;
+	}
+	25%{
+		background-image:url('/static/images/Bg-2.png');
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:center;
+		background-color:rgba(105, 152, 171,1);
+		background-blend-mode:lighten;
+	}
+	50%{
+		background-image:url('/static/images/Bg-3.png');
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:center;
+		background-color:rgba(105, 152, 171,1);
+		background-blend-mode:lighten;
+	}
+	75%{
+		background-image:url('/static/images/Bg-4.png');
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:center;
+		background-color:rgba(105, 152, 171,1);
+		background-blend-mode:lighten;
+	}
+	100%{
+		background-image:url('/static/images/Bg-5.png');
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:center;
+		background-color:rgba(105, 152, 171,1);
+		background-blend-mode:lighten;
+	}
+}
+.Nav_Ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-align:right;
+}
+.Nav_Li:not(.Nav_Lg){
+	margin-right:0.1em;
+	display:inline-block;
+}
+.Nav_Lg{
+	float:left;
+	color:#b1d0e0;
+	margin:0.9em;
+}
+.Nav_LgP{
+	background-color:#1a374d;
+	font-family: 'Caveat', cursive;
+	font-size:2.8em;
+	color:#6998ab;
+	padding:0.15em 0.15em;
+	margin:0;
+}
+.Nav_LiP{
+	color:#1a374d;
+	font-family: 'Montserrat', sans-serif;
+	font-size:2em;
+	margin:0.5em;
+	margin-top:0.9em;
+}
+a{
+	text-decoration:none;
+}
+.active{
+	text-decoration:none;
+	color:#1a374d;
+	text-decoration:underline solid 0.1em;
+	text-underline-position:under;
+}
+.passive:hover{
+	color:#1a374d;
+	text-decoration:underline solid 0.1em;
+	text-underline-position:under;
+}

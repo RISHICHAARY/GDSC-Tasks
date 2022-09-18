@@ -1,0 +1,66 @@
+{% extends 'Nav.html' %}
+{% load static %}
+{% block meta_description1 %}passive{% endblock %}
+{% block meta_description2 %}active{% endblock %}
+{% block meta_description3 %}passive{% endblock %}
+{% block meta_description4 %}passive{% endblock %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/About_Css.css' %}">
+<div class="row">
+	<div class="col">
+		<div class="LgD">
+			<img src="{% static 'images/FD.png' %}" style="border-radius:0.5em;width:100%;height:100%;">
+		</div>
+	</div>
+	<div class="col1">
+		<div class="TxD">
+			<p style="display:inline;color:black;font-family: 'Montserrat', sans-serif;font-size:2.5em;margin:0;padding:0;width:80%;">Hi, I'm Rishi.</p>
+			<p style="color:black;font-family: 'Montserrat', sans-serif;font-size:1.8em;margin:0;margin-top:0.5em;padding:0;width:80%;">I'm a Full-stack developer who loves to develop new projects.</p>
+			<p style="color:black;font-family: 'Montserrat', sans-serif;font-size:1.8em;margin:0;margin-top:0.5em;padding:0;">I have experience in working with Django, Html, Css, Java Script, Python,<br>Machine learning,C#, C++, MySql, MatLab and Tkinter Projects.</p>
+		</div>
+	</div>
+</div>
+<div class="rw">
+	<h1 style="text-decoration:underline solid 0.1em;text-underline-position:under;margin: 0;">Education</h1><br>
+	<h2 style="margin:0;margin-top:0.1em;">Pursuing B.Tech degree in Artificial intelligence at SRM university.</h2>
+</div>
+<div class="row2">
+	<div class="colr1" style="justify-content:center;">
+		<img src="{% static 'images/chart.png' %}" width="60%" height="60%">
+		<h1 style="margin:0;">Skills</h1>
+	</div>
+	<div class="colr2">
+		<div>
+			<div class="tr"><label for="dj">Django</label>
+			<progress id="dj" value="95" max="100"></progress></div><br>
+			<div class="tr"><label for="css">Css</label>
+			<progress id="css" value="85" max="100"> 32% </progress></div><br>
+			<div class="tr"><label for="html">Html</label>
+			<progress id="html" value="95" max="100"> 32% </progress></div><br>
+			<div class="tr"><label for="py">Python</label>
+			<progress id="py" value="95" max="100"> 32% </progress></div><br>
+			<div class="tr"><label for="c">C</label>
+			<progress id="C" value="80" max="100"> 32% </progress></div><br>
+			<div class="tr"><label for="Cpp">C++</label>
+			<progress id="Cpp" value="80" max="100"> 32% </progress></div><br>
+			<div class="tr"><label for="Js">C++</label>
+			<progress id="Js" value="80" max="100"> 32% </progress></div><br>
+			<div class="tr"><label for="sql">Sql</label>
+			<progress id="sql" value="90" max="100"> 32% </progress></div><br>
+			<div class="tr"><label for="Ml">Matlab</label>
+			<progress id="Ml" value="80" max="100"> 32% </progress></div><br>
+		</div>
+	</div>
+</div>
+<div class="row1">
+		<div class="col2"><img src="{% static 'images/dj.png' %}" width="60%" height="60%" class="Nav_Lg"></div>
+		<div class="col2"><img src="{% static 'images/html.png' %}" width="60%" height="60%" class="Nav_Lg"></div>
+		<div class="col2"><img src="{% static 'images/css.png' %}" width="60%" height="60%" class="Nav_Lg"></div>
+		<div class="col2"><img src="{% static 'images/java.png' %}" width="60%" height="60%" class="Nav_Lg"></div>
+		<div class="col2"><img src="{% static 'images/python.png' %}" width="60%" height="60%" class="Nav_Lg"></div>
+		<div class="col2"><img src="{% static 'images/c.png' %}" width="60%" height="60%" class="Nav_Lg"></div>
+		<div class="col2"><img src="{% static 'images/cpp.png' %}" width="60%" height="60%" class="Nav_Lg"></div>
+		<div class="col2"><img src="{% static 'images/sql.png' %}" width="60%" height="60%" class="Nav_Lg"></div>
+		<div class="col2"><img src="{% static 'images/matlab.png' %}" width="100" height="90" class="Nav_Lg"></div>
+</div>
+{% endblock %}
